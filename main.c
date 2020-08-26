@@ -9,7 +9,7 @@ int main() {
     scanf("%s", str);
 
     // Initializing the description of the timing diagram
-    // Same with the input size
+    // 2 bits per input bit
     int bits = strlen(str);
     int bi_s[bits*2];
 
@@ -37,7 +37,7 @@ int main() {
         printf("%i ", bi_s[i]);
     }
 
-    // Free up allocated memory
+    // Frees up allocated memory
     free(str);
 
     return 0;
